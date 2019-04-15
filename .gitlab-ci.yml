@@ -1,0 +1,29 @@
+variables:
+  REGISTRY_HOST: ipe-wim-gitlab.fzi.de:5000
+  IMAGE_NAME: $REGISTRY_HOST/$CI_PROJECT_PATH/$CI_COMMIT_REF_NAME
+  GIT_STRATEGY: clone
+
+stages:
+   - docker
+   - deploy
+
+nginx:
+  image: docker:17.06.0-ce
+  stage: docker
+  only: 
+    - master
+  script:
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $REGISTRY_HOST
+    - docker build --pull --no-cache -t $IMAGE_NAME .
+    - docker push $IMAGE_NAME
+
+deploy:
+  image: alpine
+  stage: deploy
+  only: 
+    - master
+  script:
+    - apk add --update --no-cache openssh sshpass
+    - sshpass -V
+    - export SSHPASS=$BOTY_PWD 
+    - sshpass -e ssh -o StrictHostKeyChecking=no $WEBSERVER "export DOCKER_CONFIG=/home/riemer/.docker/;cd /opt/dpnb-website;./deploy.sh"
