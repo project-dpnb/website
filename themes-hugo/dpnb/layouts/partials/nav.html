@@ -1,0 +1,21 @@
+<nav id="menu">
+    <div id="bigTitle" class="wholepage">
+        <a href="#" id="menu-icon"></a>
+        <a href="/" id="logo_dpnb_menu"> </a>
+        <ul>
+            {{ $currentNode := . }}
+            <li><a class="{{ if eq $currentNode.RelPermalink "/" }} blue {{ end }}" href="/">Startseite</a></li>
+            <li class="dropdown"><a class="dropbtn {{ if eq $currentNode.RelPermalink "/projekt/" }} blue {{ end }}{{if hasPrefix $currentNode.RelPermalink "/dpnb/"}}blue{{ end }}" href="/projekt/">Das Projekt</a>
+                <div id="dropdown-content">
+                    <a href="/dpnb/motivation/">Motivation & Idee</a>
+                    <a href="/dpnb/projektpartner">Projektpartner</a>
+                    <a href="/dpnb/inhalt">Inhalt</a>
+                </div>
+            </li>
+            <li><a {{ if eq $currentNode.RelPermalink "/aktuelles/" }} class="blue"{{ end }}href="/aktuelles">Aktuelles</a></li>
+            <li><a {{ if eq $currentNode.RelPermalink "/publikationen/" }} class="blue"{{ end }}href="/publikationen">Publikationen</a></li>
+            <li><a {{ if eq $currentNode.RelPermalink "/kontakt/" }} class="blue"{{ end }}href="/kontakt">Kontakt</a>
+            </li>
+        </ul>
+    </div>
+</nav>
