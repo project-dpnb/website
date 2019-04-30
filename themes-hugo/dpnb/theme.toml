@@ -1,0 +1,23 @@
+name = "DPNB"
+license = "MIT"
+licenselink = "https://github.com/ribice/kiss/master/LICENSE.md"
+description = ""
+homepage = "https://www.dpnb.de"
+tags = [
+  "blog",
+  "minimal",
+  "minimalist",
+  "responsive"
+]
+features = [
+]
+min_version = 0.28
+
+[author]
+  name = "Eike Broda"
+  homepage = "https://www.biba.uni-bremen.de"
+
+[original]
+  name = "kiss"
+  homepage = "http://tanksuzuki.com"
+  repo = "https://github.com/tanksuzuki/hemingway"
