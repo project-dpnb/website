@@ -1,0 +1,30 @@
+/*
+TEXT DESIGN INSIDE THE CLASS
+*/
+.subtitle {
+	height: 430px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/*
+FOR TABLETS
+*/
+@media (max-width: 780px) {
+
+	nav #dropdown-content {
+		background-color: rgba(240, 248, 255, 0.90);
+		color: black;
+	}
+
+	/*FRAME AROUND THE PAGE*/
+	.frame {
+		margin-top: 0;
+		padding-bottom: 5px;
+	}
+}
+
+
+.frame { /*Frame around the page*/
+	padding: 0px 0px 20px;
+}
