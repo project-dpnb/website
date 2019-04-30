@@ -1,0 +1,4 @@
+baseURL = "https://www.dpnb.de"
+languageCode = "de-de"
+title = "DPNB"
+theme = "dpnb"
