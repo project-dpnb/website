@@ -1,0 +1,666 @@
+/*
+APPLIED TO THE WHOLE PAGES
+*/
+body {
+    font-family: "Segoe UI", Verdana, "DejaVu Sans", Geneva, sans-serif;
+    margin: 0px;
+    margin-top: 75px;
+    font-weight: 300;
+    font-size: large;
+}
+
+.frame { /*Frame around the page*/
+    padding: 0px 0px 20px;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*
+images that take the whole page
+*/
+#projekt {
+	background: lightblue url("/images/gross/projekt.jpg") no-repeat center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#aktuelles {
+	background: lightblue url("/images/gross/aktuelles.jpg") no-repeat center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#kontakt {
+	background: lightblue url("/images/gross/kontakt.jpg") no-repeat center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#publikationen {
+    background: lightblue url("/images/gross/publikationen.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+images that take the whole page
+*/
+#motivation {
+    background: lightblue url("/images/gross/motivation.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#projektpartner {
+    background: lightblue url("/images/gross/projektpartner.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#inhalt {
+    background: lightblue url("/images/gross/inhalt.jpg") no-repeat center;
+    background-size: cover;
+
+}
+
+/*
+MENU AT THE TOP OF THE PAGES
+*/
+nav {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    clear: both;
+    background-color: AliceBlue;
+    text-align: right;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    border-bottom: 3px solid white;
+}
+
+nav ul {
+    margin: 0px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0px 1% 0px;
+
+}
+
+nav li a, .dropbtn {
+    display: inline-block;
+    padding: 25px;
+    text-align: center;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0px;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+nav li a.blue { /*current page*/
+    background-color: rgb(19, 98, 148) /*rgb(56,164,231)*/;
+    color: white; /*to avoid the change of color when hovering*/
+}
+
+nav li.dropdown {
+    display: inline-block;
+}
+
+nav #dropdown-content {
+    display: none;
+    /*position:absolute;*/
+    position: fixed;
+    z-index: 1;
+    background: rgba(240, 248, 255, 0.90) /*rgba(192,192,192,0.95)*/;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+nav #dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+nav #dropdown-content a:hover {
+    text-decoration: underline;
+}
+
+nav .dropdown:hover #dropdown-content {
+    display: block;
+}
+
+#menu-icon { /*appears only for smaller screens*/
+    display: hidden;
+    width: 60px;
+    height: 60px;
+    background: url("/images/menu_icon.png") center no-repeat;
+}
+
+#logo_dpnb_menu {
+    display: inline-block;
+    float: left;
+    background: url("/images/logo/logo_dpnb_banner.png") center no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 65px;
+    margin-top: 10px;
+}
+
+/*
+MENU FOR THE PROJECTS PAGES
+*/
+
+.menu-projekt ul {
+    list-style-type: none;
+    display: list-item;
+    list-style-image: url("/images/triangle.png");
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu-projekt ul li {
+    padding-left: 0px;
+}
+
+.menu-projekt ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*
+TEXT DESIGN INSIDE THE CLASS
+*/
+.wholepage {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.fixheight {
+    height: 430px;
+    display: flex;
+    align-items: top;
+    justify-content: right;
+    text-decoration: none;
+}
+
+.subtitle {
+    font-size: 86px;
+    font-weight: 200;
+    text-align: right;
+    padding: 3px 20px 3px;
+
+}
+
+.inbetween {
+    margin: 40px 10% 40px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.inbetween-spacing {
+    margin: 40px 10% 110px;
+}
+
+.weiss {
+    color: white;
+}
+
+.frame p, .frame li {
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.underline {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.frame .center {
+    text-align: center;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.black { /*for the links*/
+    color: black;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.marginBot {
+    margin-bottom: 10px;
+}
+
+/*
+MOTIVATION & IDEE - EIN BILD + TEXT
+*/
+.elt {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    max-height: 500px;
+    background-color: rgb(19, 98, 148);
+    color: white;
+    text-align: center;
+    font-size: 28px;
+}
+
+.elt-spacing {
+    margin-bottom: 10px;
+}
+
+.elt.platform {
+    -webkit-flex-direction: wrap-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+.elt .legend, .elt img {
+    max-width: 915px;;
+}
+
+.elt img.right {
+    background-color: white;
+    -webkit-flex-basis: 60%;
+    flex-basis: 60%;
+    border-left: solid 2px white;
+    padding: 0px;
+    margin: 0px;
+    max-height: 500px;
+}
+
+/*
+.elt .contain {
+	width:60%;
+}
+*/
+
+.elt /*.contain*/ img.left {
+    -webkit-flex-basis: 60%;
+    flex-basis: 60%;
+    border-right: solid 4px white;
+    padding: 0px;
+    margin: 0px;
+    max-height: 500px;
+}
+
+.elt .legend {
+    /*width:35%;*/
+    -webkit-flex-basis: 39%;
+    flex-basis: 39%;
+    margin: 0px;
+
+}
+
+.elt .padd {
+    padding: 20px;
+}
+
+
+/*
+PROJEKTPARTNER
+*/
+
+.partner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+
+.partner .indiv {
+    text-align: justify;
+    flex-basis: 34%;
+    margin-bottom: 100px;
+}
+
+.partner .indiv .partnerDescr {
+    line-break: auto;
+}
+
+.partner .indiv .logo {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.partner .logo img {
+    width: 80%;
+}
+
+
+/*
+TABLE       in dpnb/projekt/arbeitspakete
+*/
+.centerblock {
+    text-align: center;
+}
+
+.tabel {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.tabel .ap {
+    border: 1px solid Gray;
+    width: 30%;
+    /*padding:5px;*/
+    margin: 3px;
+
+}
+
+.tabel .ap .ap_text {
+    padding: 5px;
+}
+
+.hintergrundLGrau {
+    padding: 5px;
+    background-color: LightGray;
+    color: black;
+    font-weight: 600;
+    height: 45px;
+}
+
+/*
+FOOTER
+*/
+footer {
+    margin-top: 15px;
+    padding: 10px 5%;
+    background-color: AliceBlue;
+}
+
+footer a {
+    color: black;
+}
+
+.foot-wrap {
+    padding: 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.foot-wrap .footelt { /*three elements on the same line*/
+    vertical-align: middle;
+    display: inline-block;
+    line-break: auto;
+    width: 32.5%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.foot-wrap .foottxt { /*links on the right*/
+    padding: 15px;
+}
+
+.footelt .foottxt img {
+    width: 80%;
+}
+
+/*
+MEDIA-QUERIES
+*/
+
+
+/*
+pour les bandeaux
+*/
+@media (max-width: 1270px) {
+
+    .elt .legend {
+        font-size: 24px;
+    }
+
+}
+
+
+@media (max-width: 1100px) {
+
+    .elt .legend {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 870px) {
+
+    /*MOTIVATION z.B*/
+    .elt {
+        max-height: none;
+        font-size: 24px;
+    }
+
+    .elt img.right, .elt img.left, .elt .legend {
+        flex-basis: 100%;
+        border: none;
+        border-top: solid 4px white;
+        font-size: 24px;
+    }
+
+
+    .university .indiv {
+        flex-basis: 40%;
+    }
+
+    .enterprise .indiv {
+        flex-basis: 45%;
+    }
+
+}
+
+/*
+FOR TABLETS
+*/
+@media (max-width: 780px) {
+
+    /*NAVIGATION MENU*/
+    #menu-icon {
+        display: inline-block;
+        padding: 5px;
+    }
+
+    nav ul {
+        display: none;
+        text-align: center;
+        padding-left: 10px;
+        background-color: rgba(240, 248, 255, 0.90);
+    }
+
+    nav:hover ul {
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        margin-left: -200px;
+        margin-top: 75px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    nav ul li, .dropdown {
+        display: block;
+        width: 200px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    nav ul li a, .dropbtn {
+        width: 100%; /*color blue on the whole line*/
+        padding: 20px 0px 20px;
+        margin: auto;
+    }
+
+    nav #dropdown-content {
+        position: absolute;
+        margin-left: -160px;
+        width: 160px;
+        margin-top: -63px;
+        box-shadow: none;
+        /*background:rgba(192,192,192,0.95);*/
+
+    }
+
+    nav #dropdown-content a {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    #logo_dpnb_menu { /*smaller than for PC*/
+        width: 150px;
+        height: 75px;
+    }
+
+    .subtitle {
+        font-size: 64px;
+    }
+
+    .inbetween {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 24px;
+    }
+
+    .frame {
+        margin-top: 5px;
+    }
+
+    /*
+    SUB MENU IN PROJEKT
+    */
+    .menu-projekt ul {
+        flex-direction: column;
+    }
+
+    .menu-projekt ul li {
+        padding-left: 5px;
+    }
+
+
+    /*PARTNER*/
+    .partner .indiv {
+        flex-basis: 100%;
+        padding: 10px;
+        margin-bottom: 80px;
+    }
+
+    .partner .logo img {
+        width: 30%;
+    }
+
+
+    /*FOOTER*/
+    .foot-wrap .footelt { /*elements take the whole width.*/
+        width: 100%;
+        padding: 0px;
+    }
+
+    .footelt img {
+        display: block;
+        max-width: 300px;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .foot-wrap .foottxt {
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    /* TABLE__in dpnb/projekt/arbeitspakete */
+    .tabel .ap {
+        width: 95%; /*not 100% as there are margins that add width*/
+        margin-bottom: 10px;
+    }
+
+    .frame p {
+        padding: 5px;
+    }
+
+}
+
+
+/*
+FOR MOBILES
+*/
+@media (max-width: 480px) {
+
+
+    nav:hover ul {
+        margin-left: -150px;
+    }
+
+    nav ul li, .dropdown {
+        width: 150px;
+
+    }
+
+    nav #dropdown-content {
+        width: 120px;
+        margin-left: -120px;
+
+    }
+
+    nav #dropdown-content a {
+        width: 120px;
+    }
+
+    .subtitle {
+        font-size: 48px;
+    }
+
+}
+
+/*
+FOR BIG SCREENS
+*/
+@media (min-width: 1200px) {
+
+
+}
+
+
+
