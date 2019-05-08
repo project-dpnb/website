@@ -51,9 +51,6 @@ images that take the whole page
     justify-content: center;
 }
 
-/*
-images that take the whole page
-*/
 #motivation {
     background: lightblue url("/images/gross/motivation.jpg") no-repeat center;
     background-size: cover;
@@ -111,7 +108,7 @@ nav li a:hover {
 }
 
 nav li a.blue { /*current page*/
-    background-color: rgb(19, 98, 148) /*rgb(56,164,231)*/;
+    background-color: rgb(19, 98, 148);
     color: white; /*to avoid the change of color when hovering*/
 }
 
@@ -121,10 +118,9 @@ nav li.dropdown {
 
 nav #dropdown-content {
     display: none;
-    /*position:absolute;*/
     position: fixed;
     z-index: 1;
-    background: rgba(240, 248, 255, 0.90) /*rgba(192,192,192,0.95)*/;
+    background: rgba(240, 248, 255, 0.90);
     width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 
@@ -221,8 +217,12 @@ TEXT DESIGN INSIDE THE CLASS
     margin: 40px 10% 110px;
 }
 
-.weiss {
+.white {
     color: white;
+}
+
+.black { /*for the links*/
+    color: black;
 }
 
 .frame p, .frame li {
@@ -230,7 +230,6 @@ TEXT DESIGN INSIDE THE CLASS
     padding-left: 20px;
     padding-right: 20px;
 }
-
 
 .underline {
     text-decoration: underline;
@@ -246,10 +245,6 @@ TEXT DESIGN INSIDE THE CLASS
 
 .text_right {
     text-align: right;
-}
-
-.black { /*for the links*/
-    color: black;
 }
 
 .justify {
@@ -294,7 +289,7 @@ MOTIVATION & IDEE - EIN BILD + TEXT
 }
 
 .elt .legend, .elt img {
-    max-width: 915px;;
+    max-width: 915px;
 }
 
 .elt img.right {
@@ -307,13 +302,7 @@ MOTIVATION & IDEE - EIN BILD + TEXT
     max-height: 500px;
 }
 
-/*
-.elt .contain {
-	width:60%;
-}
-*/
-
-.elt /*.contain*/ img.left {
+.elt img.left {
     -webkit-flex-basis: 60%;
     flex-basis: 60%;
     border-right: solid 4px white;
@@ -323,7 +312,6 @@ MOTIVATION & IDEE - EIN BILD + TEXT
 }
 
 .elt .legend {
-    /*width:35%;*/
     -webkit-flex-basis: 39%;
     flex-basis: 39%;
     margin: 0px;
@@ -387,7 +375,6 @@ TABLE       in dpnb/projekt/arbeitspakete
 .tabel .ap {
     border: 1px solid Gray;
     width: 30%;
-    /*padding:5px;*/
     margin: 3px;
 
 }
@@ -446,7 +433,7 @@ MEDIA-QUERIES
 
 
 /*
-pour les bandeaux
+for the titles in the large pictures
 */
 @media (max-width: 1270px) {
 
@@ -538,8 +525,6 @@ FOR TABLETS
         width: 160px;
         margin-top: -63px;
         box-shadow: none;
-        /*background:rgba(192,192,192,0.95);*/
-
     }
 
     nav #dropdown-content a {
