@@ -276,11 +276,8 @@ MOTIVATION & IDEE - EIN BILD + TEXT
     background-color: rgb(19, 98, 148);
     color: white;
     text-align: center;
-    font-size: 28px;
-}
-
-.elt-spacing {
     margin-bottom: 10px;
+    font-size: 28px;
 }
 
 .elt.platform {
@@ -292,23 +289,21 @@ MOTIVATION & IDEE - EIN BILD + TEXT
     max-width: 915px;
 }
 
-.elt img.right {
-    background-color: white;
-    -webkit-flex-basis: 60%;
-    flex-basis: 60%;
-    border-left: solid 2px white;
+.elt img{
     padding: 0px;
     margin: 0px;
     max-height: 500px;
+    -webkit-flex-basis: 60%;
+    flex-basis: 60%;
+}
+
+.elt img.right {
+    background-color: white;
+    border-left: solid 4px white;
 }
 
 .elt img.left {
-    -webkit-flex-basis: 60%;
-    flex-basis: 60%;
     border-right: solid 4px white;
-    padding: 0px;
-    margin: 0px;
-    max-height: 500px;
 }
 
 .elt .legend {
