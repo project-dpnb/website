@@ -64,6 +64,30 @@ images that take the whole page
 #inhalt {
     background: lightblue url("/images/gross/inhalt.jpg") no-repeat center;
     background-size: cover;
+}
+
+.fixheight {
+    height: 430px;
+    text-decoration: none;
+}
+
+.fixheight.middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fixheight.side{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.subtitle {
+    font-size: 86px;
+    font-weight: 200;
+    text-align: right;
+    padding: 3px 20px 3px;
 
 }
 
@@ -189,22 +213,6 @@ TEXT DESIGN INSIDE THE CLASS
     width: 100%;
     max-width: 1200px;
     margin: auto;
-}
-
-.fixheight {
-    height: 430px;
-    display: flex;
-    align-items: top;
-    justify-content: right;
-    text-decoration: none;
-}
-
-.subtitle {
-    font-size: 86px;
-    font-weight: 200;
-    text-align: right;
-    padding: 3px 20px 3px;
-
 }
 
 .inbetween {
