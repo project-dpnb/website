@@ -301,6 +301,7 @@ MOTIVATION & IDEE - EIN BILD + TEXT
     padding: 0px;
     margin: 0px;
     max-height: 500px;
+    max-width: 60%;
     -webkit-flex-basis: 60%;
     flex-basis: 60%;
 }
