@@ -4,14 +4,22 @@ variables:
   GIT_STRATEGY: clone
 
 stages:
+   - build
    - docker
    - deploy
+
+pages:
+  image: monachus/hugo
+  stage: build
+  script:
+    - hugo
+  artifacts:
+    paths:
+      - public
 
 nginx:
   image: docker:17.06.0-ce
   stage: docker
-  only: 
-    - master
   script:
     - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $REGISTRY_HOST
     - docker build --pull --no-cache -t $IMAGE_NAME .
