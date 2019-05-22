@@ -2,3 +2,6 @@ baseURL = "https://www.dpnb.de"
 languageCode = "de-de"
 title = "DPNB"
 theme = "dpnb"
+
+[params.info]
+homeTitle = "DPNB - Broker für dynamische Produktionsnetzwerke"
