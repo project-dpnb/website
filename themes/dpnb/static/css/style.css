@@ -618,6 +618,10 @@ FOR MOBILES
 @media (max-width: 480px) {
 
 
+    body {
+        font-weight: normal;
+    }
+	
     nav:hover ul {
         margin-left: -150px;
     }
