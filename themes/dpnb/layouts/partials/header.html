@@ -15,7 +15,11 @@
 
     <link rel="icon" href="{{"images/faviconwhite.png" | relURL}}" />
 
-    <meta name="description" content="DPNB - Dynamic Production Network Broker">
+    {{ if .Params.metaDesc }}
+    <meta name="description" content="{{ .Params.metaDesc }}">
+    {{ else }}
+    <meta name="description" content="Der &quot;Broker für dynamische Produktionsnetzwerke&quot; (DPNB) ist ein Forschungsprojekt.">
+    {{ end }}
 
     {{- range .Site.Params.Assets.customCSS -}}
     <link rel='stylesheet' href='{{ . | absURL }}'>
