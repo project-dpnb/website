@@ -1,31 +1,4 @@
 {{ partial "header" . }}
 {{ partial "nav" . }}
-
-<div class="frame">
-    <a class="wholepage fixheight middle" id="projekt" href="/projekt/">
-        <div class="subtitle white">Das DPNB-Projekt</div>
-    </a>
-
-    <div class="inbetween inbetween-spacing">
-        Der Broker für dynamische Produktionsnetzwerke (DPNB) ermöglicht die kurzfristige und agile Bildung von Supply Chains 
-        durch die Vernetzung von Kapazitätsanbietern und -nachfragern. Dadurch werden Wettbewerbsvorteile auf einem neuen Niveau erreicht.
-    </div>
-
-    <a class="wholepage fixheight middle" id="aktuelles" href="/aktuelles/">
-        <div class="subtitle black"> Aktuelles</div>
-    </a>
-
-    <div class="inbetween inbetween-spacing">
-        Informieren Sie sich auf diesen Seiten über das Projekt und bleiben auf dem aktuellen Stand des Fortgangs.
-    </div>
-
-    <a class="wholepage fixheight middle" id="kontakt" href="/kontakt/">
-        <div class="subtitle black">Kontakt</div>
-    </a>
-
-    <div class="inbetween inbetween-spacing">
-        Zögern Sie nicht mit Fragen und Anregungen auf uns zu zukommen.
-    </div>
-
-</div>
+{{ .Content }}
 {{ partial "footer" . }}
