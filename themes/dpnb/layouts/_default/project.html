@@ -1,0 +1,19 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+
+<div class="frame">
+    <div class="menu-projekt">
+        <ul>
+          {{- $currentPage := . -}}
+          {{ range .Site.Menus.main -}}
+            {{ if eq .Identifier "project" }}
+                {{ range .Children }}
+                  <li><a href="{{ .URL | absLangURL }}" {{ if $currentPage.IsMenuCurrent "main" . }}class="bold"{{ end }}>{{ .Name }}</a></li>
+                {{ end }}
+            {{ end }}
+          {{- end }}
+        </ul>
+    </div>
+    {{ .Content }}
+</div>
+{{ partial "footer" . }}

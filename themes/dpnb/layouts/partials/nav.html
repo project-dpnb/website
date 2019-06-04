@@ -3,19 +3,33 @@
         <a href="#" id="menu-icon"></a>
         <a href="/" id="logo_dpnb_menu"> </a>
         <ul>
-            {{ $currentNode := . }}
-            <li><a class="{{ if eq $currentNode.RelPermalink "/" }} blue {{ end }}" href="/">Startseite</a></li>
-            <li class="dropdown"><a class="dropbtn {{ if eq $currentNode.RelPermalink "/projekt/" }} blue {{ end }}{{if hasPrefix $currentNode.RelPermalink "/dpnb/"}}blue{{ end }}" href="/projekt/">Das Projekt</a>
-                <div id="dropdown-content">
-                    <a href="/dpnb/motivation/">Motivation & Idee</a>
-                    <a href="/dpnb/projektpartner">Projektpartner</a>
-                    <a href="/dpnb/inhalt">Inhalt</a>
-                </div>
-            </li>
-            <li><a {{ if eq $currentNode.RelPermalink "/aktuelles/" }} class="blue"{{ end }}href="/aktuelles">Aktuelles</a></li>
-         <!--   <li><a {{ if eq $currentNode.RelPermalink "/publikationen/" }} class="blue"{{ end }}href="/publikationen">Publikationen</a></li> -->
-            <li><a {{ if eq $currentNode.RelPermalink "/kontakt/" }} class="blue"{{ end }}href="/kontakt">Kontakt</a>
-            </li>
+          {{- $currentPage := . -}}
+          {{ range .Site.Menus.main -}}
+            {{ if .HasChildren }}
+              <li class="dropdown">
+                  <a href="{{ .URL | absLangURL }}" {{ if hasPrefix ($currentPage.Permalink|string) (.URL|absLangURL|string)}}class="blue"{{ end }}>{{ .Name }} </a>
+                  <div id="dropdown-content">
+                    {{ range .Children }}
+                      <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                    {{ end }}
+                  </div>
+              </li>
+            {{ else }}
+              <li>
+                  <a href="{{ .URL | absLangURL }}" {{ if eq (.URL|absLangURL|string) ($currentPage.Permalink|string)}}class="blue"{{ end }}>{{ .Name }}</a>
+              </li>
+            {{ end }}
+          {{- end }}
+
+          {{ $curLang := .Site.Language.Lang }}
+          {{ range $.Site.Home.AllTranslations }}
+            {{ if ne .Language.Lang $curLang }}
+              <li><a href="{{ .Permalink }}">{{ .Language.LanguageName  }}</a></li>
+            {{/* {{ else }}
+            <li>{{ .Language.LanguageName }}</li>*/}}
+            {{ end }}
+          {{ end }}
+
         </ul>
     </div>
 </nav>
