@@ -1,0 +1,20 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+
+<div class="frame">
+
+  <a class="wholepage fixheight" id="aktuelles" href="/aktuelles">
+      <div class="subtitle black">News</div>
+  </a>
+
+  <div class="inbetween">
+      <i> "Coming together is the beginning, <br /> Keeping together is progress, <br />Working together is success." </i>
+      <br />Henry Ford
+      <br /> <br />
+      In this sense, the current progress and successes of our work can be found here.
+  </div>
+  
+  {{ partial "aktuelles_posts" .}}
+</div>
+
+{{ partial "footer" . }}

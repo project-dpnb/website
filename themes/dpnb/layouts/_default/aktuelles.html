@@ -1,0 +1,21 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+
+<div class="frame">
+
+  <a class="wholepage fixheight" id="aktuelles" href="/aktuelles">
+      <div class="subtitle black">Aktuelles</div>
+  </a>
+
+  <div class="inbetween">
+      <i> "Zusammenkommen ist ein Beginn, <br /> Zusammenbleiben ist ein Fortschritt, <br />Zusammenarbeiten ist ein
+          Erfolg." </i>
+      <br />Henry Ford
+      <br /> <br />
+      In diesem Sinne finden sich an dieser Stelle die aktuellen Fortschritte und Erfolge unserer Arbeit.
+  </div>
+
+  {{ partial "aktuelles_posts" .}}
+</div>
+
+{{ partial "footer" . }}

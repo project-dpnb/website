@@ -6,16 +6,14 @@
         </div>
 
         <div class="footelt">
-            <p class="justify">
-                Dieses Forschungs- und Entwicklungs&shy;projekt wird mit Mitteln des Bundes&shy;ministeriums für Bildung und
-                Forschung (BMBF) im Programm "Innovationen für die Produktion, Dienstleistung und Arbeit von morgen"
-                gefördert und vom Projekt&shy;träger Karlsruhe (PTKA) betreut.
-                Die Verantwortung für den Inhalt dieser Veröffentlichung liegt beim Autor.</p>
+            <p class="justify">{{ i18n "tpl_footer" | safeHTML}}</p>
         </div>
 
         <div class="footelt text_right">
             <div class="foottxt">
-                <a href="/impressum/">Impressum </a>
+              {{ range .Site.Menus.footer -}}
+                  <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+              {{- end }}
             </div>
             <div class="foottxt">
                 <img src="/images/logo/logo_dpnb.png" alt="Logo des Projekts"/>
