@@ -75,19 +75,19 @@ homeTitle = "DPNB - Broker für dynamische Produktionsnetzwerke"
 
   [[languages.en.menu.main]]
     url    = "/dpnb/motivation/"
-    name   = "motivation & idea"
+    name   = "Motivation & idea"
     parent = 'project'
     weight = 1
 
   [[languages.en.menu.main]]
     url    = "/dpnb/projectpartner/"
-    name   = "project partner"
+    name   = "Project partners"
     parent = 'project'
     weight = 2
 
   [[languages.en.menu.main]]
     url    = "/dpnb/content/"
-    name   = "content"
+    name   = "Content"
     parent = 'project'
     weight = 3
 
