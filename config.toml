@@ -15,7 +15,7 @@ homeTitle = "DPNB - Broker für dynamische Produktionsnetzwerke"
     weight = 0
 
   [languages.en]
-    LanguageName = "Englisch"
+    LanguageName = "English"
     weight = 1
 
   [[languages.de.menu.main]]
@@ -86,8 +86,8 @@ homeTitle = "DPNB - Broker für dynamische Produktionsnetzwerke"
     weight = 2
 
   [[languages.en.menu.main]]
-    url    = "/dpnb/content/"
-    name   = "Content"
+    url    = "/dpnb/structure/"
+    name   = "Structure"
     parent = 'project'
     weight = 3
 
