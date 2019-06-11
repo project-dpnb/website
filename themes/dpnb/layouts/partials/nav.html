@@ -16,7 +16,7 @@
               </li>
             {{ else }}
               <li>
-                  <a href="{{ .URL | absLangURL }}" {{ if eq (.URL|absLangURL|string) ($currentPage.Permalink|string)}}class="blue"{{ end }}>{{ .Name }}</a>
+                  <a href="{{ .URL | absLangURL }}" <img src="/images/language.png" alt="Sprache ändern" width=45px/> </a>
               </li>
             {{ end }}
           {{- end }}
