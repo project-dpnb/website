@@ -2,7 +2,7 @@
 /*
 FOR TABLETS
 */
-@media (max-width: 780px) {
+@media (max-width: 900px) {
 
 	nav #dropdown-content {
 		background-color: rgba(240, 248, 255, 0.90);
