@@ -9,10 +9,6 @@
     <title>{{ .Site.Params.Info.homeTitle }}</title>
     {{ end }}
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" type="text/css" />
-    {{ if eq .IsHome true }}
-    <link rel="stylesheet" href="{{ "css/index-style.css" | relURL }}" type="text/css" />
-    {{- end -}}
-
     <link rel="icon" href="{{"images/faviconwhite.png" | relURL}}" />
 
     {{ if .Params.metaDesc }}
