@@ -16,7 +16,7 @@
               </li>
             {{ else }}
               <li>
-                  <a href="{{ .URL | absLangURL }}"> <img src="/images/language.png" alt="Sprache ändern" width=45px/> </a>
+                  <a href="{{ .URL | absLangURL }}" {{ if eq (.URL|absLangURL|string) ($currentPage.Permalink|string)}}class="blue"{{ end }}>{{ .Name }} </a>
               </li>
             {{ end }}
           {{- end }}
@@ -24,7 +24,7 @@
           {{ $curLang := .Site.Language.Lang }}
           {{ range $.Site.Home.AllTranslations }}
             {{ if ne .Language.Lang $curLang }}
-              <li><a href="{{ .Permalink }}">{{ .Language.LanguageName  }}</a></li>
+              <li><a href="{{ .Permalink }}"><img src="/images/language.png" alt="Sprache ändern" width=45px/> </a></li>
             {{/* {{ else }}
             <li>{{ .Language.LanguageName }}</li>*/}}
             {{ end }}
