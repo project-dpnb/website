@@ -356,21 +356,21 @@ TABLE       in dpnb/projekt/arbeitspakete
     text-align: center;
 }
 
-.tabel {
+.table {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
 }
 
 
-.tabel .ap {
+.table .ap {
     border: 1px solid Gray;
     width: 30%;
     margin: 3px;
 
 }
 
-.tabel .ap .ap_text {
+.table .ap .ap_text {
     padding: 5px;
 }
 
@@ -599,7 +599,7 @@ FOR TABLETS
     }
 
     /* TABLE__in dpnb/projekt/arbeitspakete */
-    .tabel .ap {
+    .table .ap {
         width: 95%; /*not 100% as there are margins that add width*/
         margin-bottom: 10px;
     }
