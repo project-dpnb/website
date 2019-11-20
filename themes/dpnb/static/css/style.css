@@ -280,34 +280,23 @@ MOTIVATION & IDEE - EIN BILD + TEXT
     justify-content: space-between;
 
     width: 100%;
-    max-height: 500px;
     background-color: rgb(19, 98, 148);
     color: white;
     text-align: center;
     margin-bottom: 10px;
-    font-size: 28px;
+    font-size: 26px;
 }
 
-.elt.platform {
-    -webkit-flex-direction: wrap-reverse;
-    flex-wrap: wrap-reverse;
-}
-
-.elt .legend, .elt img {
-    max-width: 915px;
-}
-
-.elt img{
+.elt img {
     padding: 0px;
     margin: 0px;
-    max-height: 500px;
-    max-width: 100%;
-    -webkit-flex-basis: 60%;
-    flex-basis: 60%;
+    flex-basis: 69%;
+    background-color: white;
+    max-width: 69%;
+    height: auto;
 }
 
 .elt img.right {
-    background-color: white;
     border-left: solid 4px white;
 }
 
@@ -316,10 +305,8 @@ MOTIVATION & IDEE - EIN BILD + TEXT
 }
 
 .elt .legend {
-    -webkit-flex-basis: 39%;
-    flex-basis: 39%;
+    flex-basis: 30%;
     margin: 0px;
-
 }
 
 .elt .padd {
@@ -447,29 +434,41 @@ for the titles in the large pictures
 
 }
 
-
-@media (max-width: 1100px) {
-
-    .elt .legend {
-        font-size: 18px;
-    }
-
-}
-
-@media (max-width: 870px) {
+@media (min-width: 1101px) {
 
     /*MOTIVATION z.B*/
     .elt {
-        max-height: none;
-        font-size: 24px;
+      flex-direction: row;
     }
 
-    .elt img.right, .elt img.left, .elt .legend {
-        flex-basis: 100%;
-        border: none;
-        border-top: solid 4px white;
-        font-size: 24px;
+    .elt.platform {
+      flex-direction: row-reverse;
     }
+  }
+
+  @media (max-width: 1100px) {
+
+      /*MOTIVATION z.B*/
+      .elt {
+          max-height: none;
+          font-size: 24px;
+      }
+
+      .elt img {
+        max-width: 100%;
+      }
+
+      .elt img.right, .elt img.left, .elt .legend {
+          flex-basis: 100%;
+          border: none;
+          border-top: solid 4px white;
+          font-size: 24px;
+      }
+
+}
+
+
+@media (max-width: 870px) {
 
 
     .university .indiv {
@@ -616,7 +615,7 @@ FOR TABLETS
 FOR MOBILES
 */
 @media (max-width: 480px) {
-	
+
     nav:hover ul {
         margin-left: -150px;
     }
@@ -650,6 +649,3 @@ FOR BIG SCREENS
 
 
 }
-
-
-
