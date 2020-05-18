@@ -296,6 +296,10 @@ MOTIVATION & IDEE - EIN BILD + TEXT
     height: auto;
 }
 
+.elt.white {
+	background-color: white;
+}
+	
 .elt img.right {
     border-left: solid 4px white;
 }
@@ -441,9 +445,6 @@ for the titles in the large pictures
       flex-direction: row;
     }
 
-    .elt.platform {
-      flex-direction: row-reverse;
-    }
   }
 
   @media (max-width: 1100px) {
