@@ -290,9 +290,9 @@ MOTIVATION & IDEE - EIN BILD + TEXT
 .elt img {
     padding: 0px;
     margin: 0px;
-    flex-basis: 69%;
+    flex-basis: 66%;
     background-color: white;
-    max-width: 69%;
+    max-width: 66%;
     height: auto;
 }
 
@@ -309,7 +309,7 @@ MOTIVATION & IDEE - EIN BILD + TEXT
 }
 
 .elt .legend {
-    flex-basis: 30%;
+    flex-basis: 33%;
     margin: 0px;
 }
 
