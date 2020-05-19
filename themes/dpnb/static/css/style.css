@@ -290,12 +290,16 @@ MOTIVATION & IDEE - EIN BILD + TEXT
 .elt img {
     padding: 0px;
     margin: 0px;
-    flex-basis: 69%;
+    flex-basis: 66%;
     background-color: white;
-    max-width: 69%;
+    max-width: 66%;
     height: auto;
 }
 
+.elt.white {
+	background-color: white;
+}
+	
 .elt img.right {
     border-left: solid 4px white;
 }
@@ -305,7 +309,7 @@ MOTIVATION & IDEE - EIN BILD + TEXT
 }
 
 .elt .legend {
-    flex-basis: 30%;
+    flex-basis: 33%;
     margin: 0px;
 }
 
@@ -441,9 +445,6 @@ for the titles in the large pictures
       flex-direction: row;
     }
 
-    .elt.platform {
-      flex-direction: row-reverse;
-    }
   }
 
   @media (max-width: 1100px) {
