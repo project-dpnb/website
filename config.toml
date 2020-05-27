@@ -101,12 +101,20 @@ homeTitle = "DPNB - Broker für dynamische Produktionsnetzwerke"
     name   = "Contact"
     weight = 5
 
-
-
   [[languages.de.menu.footer]]
     url    = "/impressum/"
     name   = "Impressum"
     weight = 1
+	
+  [[languages.de.menu.footer]]
+    url    = "/datenschutz/"
+    name   = "Datenschutz"
+    weight = 1
+	
+  [[languages.en.menu.footer]]
+    url    = "/datenschutz/"
+    name   = "Privacy Notice"
+    weight = 1	
 
   [[languages.en.menu.footer]]
     url    = "/impressum/"
