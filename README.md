@@ -1,18 +1,5 @@
 # DPNB Webseite
-Anpassungen der DPNB.de-Webseite durch das BIBA  
-Demo: [dpnb.ebroda.de](http://dpnb.ebroda.de)
-
-## Changes
-* Gesamtbreite der Seite maximal 1200px
-* in Hugo überführt
-* Position des Logos in der Menüzeile
-* Wordbrüche ermöglicht bei langen Wörtern in der Projektbeschreibung/Footer (nutze &amp;shy; um Stellen zu markieren, an denen getrennt werden darf)
-* Bilder verkleinert
-* Breite der Projektpartner optimiert und vereinheitlicht
-* BIBA-Logo ausgetauscht
-* Encoding & meta-description ergänzt
-* 2 Rechtschreibfehler korrigiert
-* einige Kleinigkeiten bzgl. Mobile angepasst (Spacings, etc.) 
+Webseite des BMBF-Forschungsprojekts "Broker für dynamische Produktiosnetzwerke (DPNB)".
 
 ## Struktur
 Der Ordner *content* enthält die Inhalte, unter *theme/dpnb* findet sich das Layout für die Seite.
@@ -21,7 +8,7 @@ Der Ordner *content* enthält die Inhalte, unter *theme/dpnb* findet sich das La
 Die Webseite wird mittels [Hugo](https://gohugo.io) gebaut. Auf [GitHub](https://github.com/gohugoio/hugo/releases) stehen Executables für alle Betriebssysteme zur Verfügung.
 Diese in der passenden Version herunterladen und dann im Hauptverzeichnis des Projekts ablegen.
 
-Die Kommandozeile/CMD/Bash/(Power)Shell in dem Verzeichnis öffnen und die hugo(.exe) ausführen. 
+Die Kommandozeile/CMD/Bash/(Power)Shell in dem Verzeichnis öffnen und die hugo(.exe) ausführen.
 ```
 PS D:\Projekte\DPNB\Webseite\hugo\dpnb> ./hugo.exe
 Building sites …
@@ -76,7 +63,7 @@ Total in 14 ms
 Die Webseite ist dann unter der angegebenen Adresse [localhost:1313](localhost:1313) im lokalen Browser aufrufbar.
 
 ## Deployment
-Um die Webseite zu deployen einfach die Webseite mit hugo bauen und den Inhalt des public-Ordners komplett auf den 
+Um die Webseite zu deployen einfach die Webseite mit hugo bauen und den Inhalt des public-Ordners komplett auf den
 Server verschieben (z.B. mittels rsync).
 ```
 ./hugo && rsync -avp public/ user@host:/var/www/dpnb.de/
