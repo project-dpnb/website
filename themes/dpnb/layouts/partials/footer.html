@@ -12,7 +12,7 @@
         <div class="footelt text_right">
             <div class="foottxt">
               {{ range .Site.Menus.footer -}}
-                  <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                  &nbsp; <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
               {{- end }}
             </div>
             <div class="foottxt">
