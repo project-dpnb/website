@@ -50,6 +50,11 @@ homeTitle = "DPNB - Broker für dynamische Produktionsnetzwerke"
     weight = 3
 
   [[languages.de.menu.main]]
+      url    = "/veroeffentlichungen/"
+      name   = "Veröffentlichungen"
+      weight = 3
+
+  [[languages.de.menu.main]]
     url    = "/aktuelles/"
     name   = "Aktuelles"
     weight = 3
@@ -92,6 +97,11 @@ homeTitle = "DPNB - Broker für dynamische Produktionsnetzwerke"
     weight = 3
 
   [[languages.en.menu.main]]
+      url    = "/publications/"
+      name   = "Publications"
+      weight = 3
+
+  [[languages.en.menu.main]]
     url    = "/aktuelles/"
     name   = "News"
     weight = 3
@@ -105,16 +115,16 @@ homeTitle = "DPNB - Broker für dynamische Produktionsnetzwerke"
     url    = "/impressum/"
     name   = "Impressum"
     weight = 1
-	
+
   [[languages.de.menu.footer]]
     url    = "/datenschutz/"
     name   = "Datenschutz"
     weight = 1
-	
+
   [[languages.en.menu.footer]]
     url    = "/datenschutz/"
     name   = "Privacy Notice"
-    weight = 1	
+    weight = 1
 
   [[languages.en.menu.footer]]
     url    = "/impressum/"
