@@ -299,7 +299,7 @@ MOTIVATION & IDEE - EIN BILD + TEXT
 .elt.white {
 	background-color: white;
 }
-	
+
 .elt img.right {
     border-left: solid 4px white;
 }
@@ -352,6 +352,17 @@ PROJEKTPARTNER
     width: 80%;
 }
 
+/*
+Publications
+*/
+
+ul.publications li {
+  margin-bottom: 35px;
+}
+
+ul.publications li a {
+  color: #000;
+}
 
 /*
 TABLE       in dpnb/projekt/arbeitspakete
