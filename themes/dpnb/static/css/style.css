@@ -358,10 +358,12 @@ Publications
 
 ul.publications li {
   margin-bottom: 35px;
+  text-align: left;
 }
 
 ul.publications li a {
   color: #000;
+
 }
 
 /*
