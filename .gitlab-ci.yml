@@ -4,9 +4,29 @@ variables:
   GIT_STRATEGY: clone
 
 stages:
+   - github
    - build
    - docker
    - deploy
+
+pull github:
+  image: maven:3-jdk-8
+  stage: github
+  script:
+  - git remote set-url origin https://token:$TOKEN@ipe-wim-gitlab.fzi.de/dpnb/dpnb-homepage.git  
+#  - git remote set-url origin $GIT_REPO_ORIGIN/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME.git
+  - git remote add github https://github.com/project-dpnb/website.git
+ # - eval $(ssh-agent -s)
+ # - ssh-add <(echo "$SSH")
+ # - mkdir ~/.ssh
+ # - touch ~/.ssh/known_hosts
+ # - ssh-keyscan -p 2222 -t rsa $GITLAB_HOST > ~/.ssh/known_hosts
+  - git config --global user.email '$USER_EMAIL'
+  - git config --global user.name '$USER_NAME'
+  - git checkout master
+  - git pull github master
+  - git push origin --all
+
 
 pages:
   image: monachus/hugo
