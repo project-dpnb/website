@@ -1,6 +1,6 @@
 ---
 title: "20. Dezember 2021: Projektbericht veröffentlicht"
-date: 2021-12-12T00:00:00+01:00
+date: 2022-01-12T00:00:00+01:00
 draft: True
 ---
 
