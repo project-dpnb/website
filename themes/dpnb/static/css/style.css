@@ -317,6 +317,10 @@ MOTIVATION & IDEE - EIN BILD + TEXT
     padding: 20px;
 }
 
+.elt .padd a {
+  color: white;
+}
+
 
 /*
 PROJEKTPARTNER
